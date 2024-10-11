@@ -34,19 +34,10 @@ I like to play video games. My **favorite** game is _Fortnite_.
 [x] lettece
 [x] juice
 
+## My Mermaid Charts
 
-```mermaid
-flowchart TD
-    A[Start] --> B{Mode of Transport}
-    B -->|Car| C[Drive to School]
-    B -->|Bus| D[Take Bus to School]
-    B -->|Walk| E[Walk to School]
-    C --> F[Arrive at School]
-    D --> F
-    E --> F
-
-
-```mermaid
+### School Classes
+``` mermaid
 mindmap
     root((School Classes))
         Chemistry
@@ -61,3 +52,20 @@ mindmap
         CTI 110
             - Godot
             - Github
+```
+
+
+### How To Score A Basketball
+``` mermaid
+
+flowchart TD
+    A[Start] --> B{How to score in 
+    basketball}
+    B -->|Car| C[3 Pointer]
+    B -->|Bus| D[Dunk]
+    B -->|Walk| E[Layup]
+    C --> F[Score]
+    D --> F
+    E --> F
+```
+
