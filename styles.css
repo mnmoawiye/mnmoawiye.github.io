@@ -1,0 +1,94 @@
+/* Color Palette */
+:root {
+    --light-shade: #fcfcfd;
+    --light-accent: #ebc06c;
+    --main-brand-color: #e96663;
+    --dark-accent: #aaacb3;
+    --dark-shade: #475671;
+}
+
+/* Basic Styling */
+body {
+    background-color: var(--light-shade);
+    font-family: Arial, sans-serif;
+    color: var(--dark-shade);
+}
+
+/* Header */
+.header-content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.name {
+    color: var(--main-brand-color);
+    font-size: 2em;
+    margin-right: 15px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+}
+
+/* Navigation Bar */
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: var(--dark-accent);
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li a {
+    color: var(--light-shade);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar li a:hover {
+    color: var(--main-brand-color);
+}
+
+/* 3-Column Layout */
+.main-content {
+    display: flex;
+    padding: 20px;
+}
+
+.bio {
+    flex: 2;
+    background-color: var(--light-accent);
+    padding: 15px;
+    margin-right: 10px;
+}
+
+.skills, .projects {
+    flex: 1;
+    background-color: var(--dark-shade);
+    padding: 15px;
+    color: var(--light-shade);
+}
+
+.skills {
+    margin-right: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--dark-accent);
+    color: var(--light-shade);
+}
+
+footer a {
+    color: var(--main-brand-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

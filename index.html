@@ -2,64 +2,61 @@
 <html>
 <head>
     <title>Masoud's Personal Profile</title>
-    <style>
-        /* Basic styling */
-        body {
-            background-color: lightblue;
-            font-family: Arial, sans-serif;
-        }
-        h1, h2 {
-            color: purple;
-        }
-        p, li {
-            color: darkcyan;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <!-- Profile Section -->
+    <!-- Header Section -->
     <header>
-        <h1>My name is Masoud</h1>
-        <img src="https://www.usab.com/imgproxy/zhHZWpTrgXdGp5oUz9lieE2RAuXRO6utvaCJwy_w5UE/rs:fit:3000:0:0:g:ce/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3VzYWItY29tLXByb2QvdXBsb2FkLzIwMjQvMDcvMDkvZGJkOTVjZWUtNDBlOS00MjBlLWEzZjAtMGI2M2Q3MDczMTk3LmpwZw.png" alt="Profile Picture" width="150">
+        <div class="header-content">
+            <h1 class="name">Masoud Moawiye</h1>
+            <img src="https://www.usab.com/imgproxy/zhHZWpTrgXdGp5oUz9lieE2RAuXRO6utvaCJwy_w5UE/rs:fit:3000:0:0:g:ce/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3VzYWItY29tLXByb2QvdXBsb2FkLzIwMjQvMDcvMDkvZGJkOTVjZWUtNDBlOS00MjBlLWEzZjAtMGI2M2Q3MDczMTk3LmpwZw.png" 
+            alt="Profile Picture" class="profile-pic">
+        </div>
     </header>
 
-    <!-- Bio Section -->
-    <section>
-        <h2>Bio</h2>
-        <p>My name is Masoud Moawiye. I am a web development student with a passion for coding. I enjoy creating websites and solving technical problems.</p>
-        <p>My goal is to become a skilled web developer and contribute to exciting projects.</p>
-        <p>In the future, I hope to work in a collaborative environment where I can continue learning and improving my skills.</p>
-    </section>
-
-    <!-- Skills Section -->
-    <section>
-        <h2>Skills</h2>
-        <ol>
-            <li><strong>HTML</strong> - I have some experience in HTML, and it's one of my core skills.</li>
-            <li><strong>CSS</strong> - I have experience styling websites using CSS.</li>
-            <li><strong>Problem-Solving</strong> - I enjoy tackling challenges and finding solutions.</li>
-        </ol>
-    </section>
-
-    <!-- Projects Section -->
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Python Quizzes</strong>: A mini project consisting of various Python quizzes. I used many of my Python skills to create it.</li>
-            <li><strong>Calculator App</strong>: A basic calculator app to practice JavaScript.</li>
-            <li><strong>Time App</strong>: Created an app that displays the current time.</li>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="interests.html">Interests</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
-    </section>
+    </nav>
 
-    <!-- Interests Section -->
-    <section>
-        <h2>Interests</h2>
-        <p>My Interests: <a href="./interests.html">My interests</a>.</p>
-    </section>
+    <!-- Main Content (3-column layout) -->
+    <main class="main-content">
+        <!-- Bio Section -->
+        <section class="bio">
+            <h2>Bio</h2>
+            <p>My name is Masoud Moawiye. I am a web development student with a passion for coding. I enjoy creating websites and solving technical problems.</p>
+            <p>My goal is to become a skilled web developer and contribute to exciting projects.</p>
+            <p>In the future, I hope to work in a collaborative environment where I can continue learning and improving my skills.</p>
+        </section>
 
-    <!-- Contact Section -->
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2>Skills</h2>
+            <ol>
+                <li><strong>HTML</strong> - I have experience in HTML, and it's one of my core skills.</li>
+                <li><strong>CSS</strong> - I have experience styling websites using CSS.</li>
+                <li><strong>Problem-Solving</strong> - I enjoy tackling challenges and finding solutions.</li>
+            </ol>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Python Quizzes</strong>: A mini project consisting of various Python quizzes.</li>
+                <li><strong>Calculator App</strong>: A basic calculator app to practice JavaScript.</li>
+                <li><strong>Time App</strong>: Created an app that displays the current time.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
     <footer>
-        <p>Contact me: <a href="./contact.html">Contact Me</a>.</p>
+        <p>Contact me at: <a href="mailto:Masoudmnm21@gmail.com">Masoudmnm21@gmail.com</a></p>
     </footer>
 </body>
 </html>
