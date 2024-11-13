@@ -79,6 +79,20 @@ body {
     background-color: var(--middle-box-color); /* Apply the custom color to the middle box */
 }
 
+/* Projects box same color as skills box */
+.projects {
+    background-color: var(--middle-box-color); /* Same color as skills */
+}
+
+/* Extra Box */
+.extra {
+    background-color: var(--light-accent);
+    color: var(--dark-shade);
+    padding: 20px;
+    margin: 10px;
+    flex-grow: 1;
+}
+
 /* Footer */
 footer {
     text-align: center;
