@@ -52,28 +52,22 @@ body {
     color: var(--main-brand-color);
 }
 
-/* 3-Column Layout */
-.main-content {
+/* Flexbox Layout */
+.container {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--dark-accent);
     padding: 20px;
+    height: 300px;
 }
 
-.bio {
-    flex: 2;
+.box {
     background-color: var(--light-accent);
+    color: var(--dark-shade);
     padding: 15px;
-    margin-right: 10px;
-}
-
-.skills, .projects {
-    flex: 1;
-    background-color: var(--dark-shade);
-    padding: 15px;
-    color: var(--light-shade);
-}
-
-.skills {
-    margin-right: 10px;
+    margin: 10px;
+    flex-grow: 1;
 }
 
 /* Footer */
@@ -91,4 +85,35 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    padding: 10px;
+    border: 1px solid var(--dark-shade);
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    background-color: var(--main-brand-color);
+    color: var(--light-shade);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--light-accent);
 }
