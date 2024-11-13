@@ -1,57 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Masoud's Personal Profile</title>
-    <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masoud's Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="header-content">
-            <h1 class="name">Masoud Moawiye</h1>
-            <img src="https://www.usab.com/imgproxy/zhHZWpTrgXdGp5oUz9lieE2RAuXRO6utvaCJwy_w5UE/rs:fit:3000:0:0:g:ce/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3VzYWItY29tLXByb2QvdXBsb2FkLzIwMjQvMDcvMDkvZGJkOTVjZWUtNDBlOS00MjBlLWEzZjAtMGI2M2Q3MDczMTk3LmpwZw.png" 
-            alt="Profile Picture" class="profile-pic">
-        </div>
-    </header>
 
     <!-- Navigation Bar -->
     <nav>
         <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="interests.html">Interests</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Main Content with Flexbox Layout -->
-    <main class="container">
-        <section class="box bio">
-            <h2>Bio</h2>
-            <p>My name is Masoud Moawiye. I am a web development student with a passion for coding. I enjoy creating websites and solving technical problems. My goal is to become a skilled web developer and contribute to exciting projects. In the future, I hope to work in a collaborative environment where I can continue learning and improving my skills.</p>
-        </section>
+    <!-- 3-Column Flexbox Layout -->
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
 
-        <section class="box skills">
-            <h2>Skills</h2>
-            <ol>
-                <li><strong>HTML</strong> - I have experience in HTML, and it's one of my core skills.</li>
-                <li><strong>CSS</strong> - I have experience styling websites using CSS.</li>
-                <li><strong>Problem-Solving</strong> - I enjoy tackling challenges and finding solutions.</li>
-            </ol>
-        </section>
-
-        <section class="box projects">
-            <h2>Projects</h2>
-            <ul>
-                <li><strong>Python Quizzes</strong>: A mini project consisting of various Python quizzes.</li>
-                <li><strong>Calculator App</strong>: A basic calculator app to practice JavaScript.</li>
-                <li><strong>Time App</strong>: Created an app that displays the current time.</li>
-            </ul>
-        </section>
-    </main>
-
-    <!-- Footer -->
     <footer>
-        <p>Contact me at: <a href="mailto:Masoudmnm21@gmail.com">Masoudmnm21@gmail.com</a></p>
+        <p>&copy; 2024 Masoud's Website</p>
     </footer>
+
 </body>
 </html>

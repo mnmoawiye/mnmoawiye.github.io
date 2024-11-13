@@ -12,24 +12,13 @@ body {
     background-color: var(--light-shade);
     font-family: Arial, sans-serif;
     color: var(--dark-shade);
+    margin: 0;
 }
 
 /* Header */
-.header-content {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-}
-
-.name {
+h1 {
+    text-align: center;
     color: var(--main-brand-color);
-    font-size: 2em;
-    margin-right: 15px;
-}
-
-.profile-pic {
-    border-radius: 50%;
-    width: 150px;
 }
 
 /* Navigation Bar */
@@ -52,22 +41,57 @@ body {
     color: var(--main-brand-color);
 }
 
-/* Flexbox Layout */
+.navbar li a.active {
+    color: var(--main-brand-color);
+}
+
+/* 3-Column Flexbox Layout */
 .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--dark-accent);
+    background-color: #f4f4f4;
     padding: 20px;
     height: 300px;
 }
 
 .box {
-    background-color: var(--light-accent);
-    color: var(--dark-shade);
-    padding: 15px;
+    background-color: #e96663;
+    color: white;
+    padding: 20px;
     margin: 10px;
     flex-grow: 1;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #e96663;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d3543a;
+}
+
+input:focus, textarea:focus {
+    border-color: #e96663;
+    outline: none;
 }
 
 /* Footer */
@@ -87,33 +111,14 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Form Styling */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
-    padding: 10px;
-    border: 1px solid var(--dark-shade);
-    border-radius: 5px;
-    width: 100%;
-}
-
-button {
-    padding: 10px;
-    background-color: var(--main-brand-color);
-    color: var(--light-shade);
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: var(--light-accent);
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
 }
